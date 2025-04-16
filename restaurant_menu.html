@@ -35,31 +35,36 @@
             />
             <h3>El Molcajete</h3>
             <nav>
-                <a href="">Menu</a>
-                <a href="">Place your Order</a>
+                <!--Now the a are not empty-->
+                <a href="#menu">Menu</a>
+                <a href="#puo">Place your Order</a>
             </nav>
         </div>
     </header>
     <div>
-        <section>
+        <!--Aded id to the section below-->
+        <section id="menu">
             <h2>Menu</h2>
             <div class="menu-div">
+                <!--added an alt for the img-->
                 <article>
-                    <img height="300" width="300" src="https://www.cocinavital.mx/wp-content/uploads/2013/06/Huarache-con-costilla-de-res.jpg" alt="A huarache">
+                    <img alt="This looks like a slipper wich in spanish translates to huarache" height="300" width="300" src="https://www.cocinavital.mx/wp-content/uploads/2013/06/Huarache-con-costilla-de-res.jpg" alt="A huarache">
                     <h3>Huarache</h3>
                     <h4>$5</h4>
                     <p>A larger and thicker than the average tortilla toped with beans,<br>
                     nopales, pork and cheese</p>
                 </article>
                 <article>
-                    <img height="300" width="300" src="https://www.everythingerica.com/wp-content/uploads/2014/07/Enchiladas.jpg.jpg" alt="Enchiladas">
+                    <!--added an alt for the img-->
+                    <img alt="there a re also green enchiladas which are spicier than the red ones" height="300" width="300" src="https://www.everythingerica.com/wp-content/uploads/2014/07/Enchiladas.jpg.jpg" alt="Enchiladas">
                     <h3>Enchiladas</h3>
                     <h4>$12</h4>
                     <p>You know them, rolled cheese tortillas drenched in chile<br>
                     rojo that will take you to heaven</p>
                 </article>
                 <article>
-                    <img height="300" width="300" src="https://editorialtelevisa.brightspotcdn.com/dims4/default/dfd7901/2147483647/strip/true/crop/560x560+220+0/resize/1000x1000!/format/webp/quality/90/?url=https%3A%2F%2Fk2-prod-editorial-televisa.s3.us-east-1.amazonaws.com%2Fbrightspot%2Fwp-content%2Fuploads%2F2017%2F07%2Fpozole-rojo-receta.jpg" alt="El pozole">
+                    <!--added an alt for the img-->
+                    <img alt="there are as much pozole variety as the colors in the mexican flag" height="300" width="300" src="https://editorialtelevisa.brightspotcdn.com/dims4/default/dfd7901/2147483647/strip/true/crop/560x560+220+0/resize/1000x1000!/format/webp/quality/90/?url=https%3A%2F%2Fk2-prod-editorial-televisa.s3.us-east-1.amazonaws.com%2Fbrightspot%2Fwp-content%2Fuploads%2F2017%2F07%2Fpozole-rojo-receta.jpg" alt="El pozole">
                     <h3>Pozole</h3>
                     <h4>$17</h4>
                     <p>Good amount of meat and corn served with a lot of broth</p>
@@ -68,18 +73,20 @@
         </section>
     </div>
     <div>
-        <section>
+        <!--Aded id to the following section-->
+        <section id="puo">
             <h2>Place Your Order</h2>
             <div>
                 <form>
-                    <label for="Huarache">Huarache:</label><input type="number" min="0" max="10"><br>
-                    <label for="Enchiladas">Enchiladas:</label><input type="number" min="0" max="10"><br>  
-                    <label for="Pozole">Pozole:</label><input type="number" min="0" max="10">  
+                    <!--Added the ids 4 the fors-->
+                    <label for="Huarache">Huarache:</label><input id="Huarache" type="number" min="0" max="10"><br>
+                    <label for="Enchiladas">Enchiladas:</label><input id="Enchiladas" type="number" min="0" max="10"><br>  
+                    <label for="Pozole">Pozole:</label><input id="Pozole" type="number" min="0" max="10">  
                     <h4>Add-ons</h4>
-                    <label for="rs">Red Sauce +$1</label><input type="checkbox"><br>
-                    <label for="gs">Green Sauce +$1</label><input type="checkbox"><br>
-                    <label for="tc">Tortilla Chips +$2</label><input type="checkbox"><br>
-                    <label for="bb">Bolillo Bread +$2</label><input type="checkbox">
+                    <label for="rs">Red Sauce +$1</label><input id="rs" type="checkbox"><br>
+                    <label for="gs">Green Sauce +$1</label><input id="gs" type="checkbox"><br>
+                    <label for="tc">Tortilla Chips +$2</label><input id="tc" type="checkbox"><br>
+                    <label for="bb">Bolillo Bread +$2</label><input id="bb" type="checkbox">
                     <h4>Special Request</h4>
                     <textarea name="spreq" id="text" placeholder="ex. No beans, extra cheese..." cols="50" rows="10"></textarea><br>
                     <input type="submit" name="order" id="fin" value="Order Now!">
